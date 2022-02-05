@@ -1,6 +1,6 @@
 import React from 'react';
 import Intro from '../components/Intro';
-import ProjectsList from '../components/ProjectsList';
+import ProjectsList from '../components/projects/ProjectsList';
 import Skills from '../components/Skills';
 import Contact from '../components/Contact';
 
