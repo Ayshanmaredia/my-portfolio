@@ -4,11 +4,13 @@ import ProjectsList from '../components/projects/ProjectsList';
 import Skills from '../components/Skills';
 import Contact from '../components/Contact';
 
-const Home = () => {
+const Home = ({ projects }) => {
     return (
         <div className="bg-slate-100 py-5">
             <Intro />
-            <ProjectsList />
+            <ProjectsList
+                projects={projects}
+            />
             <Skills />
             <Contact />
         </div>

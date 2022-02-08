@@ -1,23 +1,7 @@
 import React from 'react';
 import Project from './Project';
 
-const ProjectsList = () => {
-
-  const projects = [{
-    "id": 1,
-    "name": "Movie DB",
-    "language": "React, JavaScript, React Bootstrap"
-  },
-  {
-    "id": 2,
-    "name": "Listicle",
-    "language": "React, JavaScript, React Bootstrap"
-  },
-  {
-    "id": 3,
-    "name": "Portfolio",
-    "language": "React, JavaScript, Tailwind"
-  }]
+const ProjectsList = ({ projects }) => {
 
   return (
     <section id="project">
@@ -25,7 +9,7 @@ const ProjectsList = () => {
         {
           projects.map((project) => (
             <div key={project.id} className="m-4">
-              <Project {...project}/>
+              <Project {...project} />
             </div>
           ))
         }
