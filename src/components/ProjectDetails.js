@@ -55,9 +55,11 @@ const ProjectDetails = ({ projects }) => {
                   <button className="bg-theme-primary hover:opacity-80 text-white py-1.5 px-3 mr-2 rounded">
                     <HiLink className="inline-block text-lg mr-1 mb-1" />Live
                   </button>
-                  <button className="bg-black hover:opacity-80 text-white text-center py-1.5 px-3 rounded">
-                    <SiGithub className="inline-block text-lg mb-1" /> Source Code
-                  </button>
+                  <a href={project.link} target="_blank" rel="noreferrer">
+                    <button className="bg-black hover:opacity-80 text-white text-center py-1.5 px-3 rounded">
+                      <SiGithub className="inline-block text-lg mb-1" /> Source Code
+                    </button>
+                  </a>
                 </div>
               </div>
               <div className='h-auto w-full bg-gray-400 md:w-4/6'>

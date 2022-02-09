@@ -26,6 +26,7 @@ function App() {
     "current": "moviedb",
     "next": "listicle",
     "previous": null,
+    "link": "https://github.com/Ayshanmaredia/movieDB",
     "skills": [{
       "name": "React",
       Icon: SiReact
@@ -56,6 +57,7 @@ function App() {
     "current": "listicle",
     "next": "portfolio",
     "previous": "moviedb",
+    "link": "https://github.com/Ayshanmaredia/todo-client",
     "skills": [{
       "name": "React",
       Icon: SiReact
@@ -94,6 +96,7 @@ function App() {
     "current": "portfolio",
     "next": null,
     "previous": "listicle",
+    "link": "https://github.com/Ayshanmaredia/my-portfolio",
     "skills": [{
       "name": "React",
       Icon: SiReact
