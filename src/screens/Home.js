@@ -3,17 +3,22 @@ import Intro from '../components/Intro';
 import ProjectsList from '../components/projects/ProjectsList';
 import Skills from '../components/Skills';
 import Contact from '../components/Contact';
+import NavBar from '../components/NavBar';
 
 const Home = ({ projects }) => {
     return (
-        <div className="bg-slate-100 py-5">
-            <Intro />
-            <ProjectsList
-                projects={projects}
-            />
-            <Skills />
-            <Contact />
-        </div>
+        <>
+            <NavBar />
+            <div className="bg-slate-100 py-5">
+
+                <Intro />
+                <ProjectsList
+                    projects={projects}
+                />
+                <Skills />
+                <Contact />
+            </div>
+        </>
     );
 };
 

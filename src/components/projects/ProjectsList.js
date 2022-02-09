@@ -5,7 +5,8 @@ const ProjectsList = ({ projects }) => {
 
   return (
     <section id="project">
-      <div className='flex flex-row justify-center px-32'>
+      <h4 className="text-3xl font-bold my-5 text-center">Projects</h4>
+      <div className='flex flex-col justify-center items-center px-10 md:flex-row md:px-32'>
         {
           projects.map((project) => (
             <div key={project.id} className="m-4">
