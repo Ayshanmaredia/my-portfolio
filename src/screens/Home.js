@@ -6,11 +6,11 @@ import Contact from '../components/Contact';
 import NavBar from '../components/NavBar';
 
 const Home = ({ projects }) => {
+
     return (
         <>
             <NavBar />
             <div className="bg-slate-100 py-5">
-
                 <Intro />
                 <ProjectsList
                     projects={projects}

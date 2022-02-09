@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './screens/Home';
-import ProjectDetails from './screens/ProjectDetails';
-
+import Listicle from './screens/Listicle';
+import MovieDb from './screens/MovieDb';
+import Portfolio from './screens/Portfolio';
 import { BsBootstrapFill } from 'react-icons/bs'
 import {
   SiReact,
@@ -22,6 +23,9 @@ function App() {
     "language": "React, JavaScript, React Bootstrap",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "image": require("./assets/image1.jpg"),
+    "current": "moviedb",
+    "next": "listicle",
+    "previous": null,
     "skills": [{
       "name": "React",
       Icon: SiReact
@@ -49,6 +53,9 @@ function App() {
     "language": "React, JavaScript, React Bootstrap",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "image": require("./assets/image2.jpg"),
+    "current": "listicle",
+    "next": "portfolio",
+    "previous": "moviedb",
     "skills": [{
       "name": "React",
       Icon: SiReact
@@ -84,6 +91,9 @@ function App() {
     "language": "React, JavaScript, Tailwind",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "image": require("./assets/image3.jpg"),
+    "current": "portfolio",
+    "next": null,
+    "previous": "listicle",
     "skills": [{
       "name": "React",
       Icon: SiReact
@@ -111,7 +121,9 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home projects={projects} />} />
-          <Route path="/projectDetail" element={<ProjectDetails projects={projects} />} />
+          <Route path="/listicle" element={<Listicle projects={projects} />} />
+          <Route path="/moviedb" element={<MovieDb projects={projects} />} />
+          <Route path="/portfolio" element={<Portfolio projects={projects} />} />
         </Routes>
       </Router>
     </>
