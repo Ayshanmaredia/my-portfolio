@@ -14,25 +14,11 @@ const ProjectDetails = ({ projects }) => {
 
   const pathName = useLocation().pathname;
 
-  console.log(pathName)
-
   const navigate = useNavigate();
 
   useEffect(() => {
     setProject(projects.find(element => element.current === pathName.replace("/", "")))
   }, [pathName])
-
-  const onNextClick = () => {
-    const nextId = project.id + 1;
-    setProject(projects.find((element) => element.id === nextId))
-    navigate(`?id=${nextId}`)
-  }
-
-  const onPrevClick = () => {
-    const prevId = project.id - 1
-    setProject(projects.find((element) => element.id === prevId))
-    navigate(`?id=${prevId}`)
-  }
 
   return (
     project ?
@@ -46,18 +32,18 @@ const ProjectDetails = ({ projects }) => {
             id="projectDetails"
             className="bg-slate-100"
           >
-            <div className="flex flex-col justify-center items-center pt-16 px-10 md:px-32">
+            <div className="flex flex-col justify-center items-center pt-8 px-6 md:px-32">
               <div className='flex justify-between w-full mb-3 md:w-4/6'>
                 <div>
-                  <h3 className="text-3xl font-bold">{project.name}</h3>
+                  <h3 className="text-2xl font-bold md:text-3xl">{project.name}</h3>
                 </div>
-                <div>
-                  <button className="bg-theme-primary hover:opacity-80 text-white py-1.5 px-3 mr-2 rounded">
-                    <HiLink className="inline-block text-lg mr-1 mb-1" />Live
+                <div className='flex flex-row'>
+                  <button className="bg-theme-primary hover:opacity-80 text-white text-sm py-1.5 px-3 mr-2 rounded md:text-base">
+                    <HiLink className="inline-block text-sm mr-1 mb-1 md:text-lg" />Live
                   </button>
-                  <a href={project.link} target="_blank" rel="noreferrer">
-                    <button className="bg-black hover:opacity-80 text-white text-center py-1.5 px-3 rounded">
-                      <SiGithub className="inline-block text-lg mb-1" /> Source Code
+                  <a href={project.sourceCodelink} target="_blank" rel="noreferrer">
+                    <button className="bg-black hover:opacity-80 text-white text-sm py-1.5 px-3 rounded md:text-base">
+                      <SiGithub className="inline-block text-sm mb-1 md:text-lg" /> Source Code
                     </button>
                   </a>
                 </div>
@@ -69,7 +55,7 @@ const ProjectDetails = ({ projects }) => {
                 <p>{project.description}</p>
               </div>
             </div>
-            <div className="flex flex-col px-10 py-10 md:px-80">
+            <div className="flex flex-col px-6 py-10 md:px-80">
               <div>
                 <h4 className="text-lg font-medium mb-2">Tools and Technologies</h4>
               </div>
@@ -86,7 +72,7 @@ const ProjectDetails = ({ projects }) => {
                 {
                   project && project.next &&
                   <Link to={`/${project.next}`}>
-                    <button className="bg-theme-primary hover:opacity-80 text-white py-1.5 px-3 rounded float-right" onClick={onNextClick}>
+                    <button className="bg-theme-primary hover:opacity-80 text-white py-1.5 px-3 rounded float-right">
                       {project.next} <HiArrowRight className="text-sm inline-block mb-1" />
                     </button>
                   </Link>
@@ -94,7 +80,7 @@ const ProjectDetails = ({ projects }) => {
                 {
                   project && project.previous &&
                   <Link to={`/${project.previous}`}>
-                    <button className="bg-theme-primary hover:opacity-80 text-white py-1.5 px-3 rounded float-left" onClick={onPrevClick}>
+                    <button className="bg-theme-primary hover:opacity-80 text-white py-1.5 px-3 rounded float-left">
                       <HiArrowLeft className="text-sm inline-block mb-1" /> {project.previous}
                     </button>
                   </Link>

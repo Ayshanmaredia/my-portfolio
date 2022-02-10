@@ -79,7 +79,7 @@ const Skills = () => {
 
   return (
     <section id="skills">
-      <div className="flex px-10 py-24 mx-auto my-2 text-center items-center justify-center md:px-80 ">
+      <div className="flex px-6 py-20 mx-auto my-2 text-center items-center justify-center md:px-80">
         <div>
           <h4 className="text-3xl font-bold my-5">Skills and Tools</h4>
           {skills.map(({ name, Icon }, index) => (
