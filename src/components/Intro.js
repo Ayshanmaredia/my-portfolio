@@ -2,12 +2,17 @@ import React from 'react';
 import { MdDownload } from 'react-icons/md';
 import Resume from '../assets/Resume.pdf';
 import { SiGithub, SiLinkedin } from 'react-icons/si';
+import { motion } from 'framer-motion';
 
 const Intro = () => {
     return (
         <section id="home">
             <div className="flex flex-col justify-center items-center px-6 md:flex-row md:px-32 md:h-[calc(100vh-48px)]">
-                <div className="basis-1/2 mt-6 md:mt-0">
+                <motion.div
+                    initial={{ x: -150 }}
+                    animate={{ x: 0 }}
+                    transition={{ type: "spring", stiffness: 50 }}
+                    className="basis-1/2 mt-6 md:mt-0">
                     <h1 className="text-4xl text-center leading-tight md:text-5xl md:text-left">Hi, I am Ayshan Maredia, a <span className="text-theme-primary font-semibold">Front-End-Developer</span></h1>
                     <p className="mt-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                         when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -25,10 +30,14 @@ const Intro = () => {
                             <SiLinkedin className="inline-block text-2xl" />
                         </a>
                     </div>
-                </div>
-                <div className="basis-1/2 content-center">
+                </motion.div>
+                <motion.div
+                    initial={{ x: 150 }}
+                    animate={{ x: 0 }}
+                    transition={{ type: "spring", stiffness: 50 }}
+                    className="basis-1/2 content-center">
                     <img className="mx-auto w-full" src={require("../assets/programmer_image.png")} alt="programmerImage" />
-                </div>
+                </motion.div>
             </div>
         </section>
     );
