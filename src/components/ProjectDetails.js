@@ -26,9 +26,9 @@ const ProjectDetails = ({ projects }) => {
         <NavBar showLinks={false} />
         <AnimatePresence exitBeforeEnter>
           <motion.section
-            initial={{ translateX: "100vh" }}
+            initial={{ translateX: "100%" }}
             animate={{ translateX: 0 }}
-            exit={{ translateX: "-100vh" }}
+            exit={{ translateX: "-100%" }}
             id="projectDetails"
             className="bg-slate-100"
           >
