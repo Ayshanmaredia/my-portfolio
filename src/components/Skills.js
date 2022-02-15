@@ -85,7 +85,7 @@ const Skills = () => {
     <section id="skills">
       <motion.div
         style={{ scale }}
-        className="flex px-6 py-20 mx-auto my-2 text-center items-center justify-center md:px-80">
+        className="flex px-6 py-20 mx-auto my-2 text-center items-center justify-center lg:px-80">
         <motion.div
           style={{
             scale: scrollYProgress

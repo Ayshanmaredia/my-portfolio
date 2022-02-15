@@ -23,7 +23,7 @@ const Contact = ({ isVisible }) => {
 
   setTimeout(() => {
     showResult(false)
-  }, 5000);
+  }, 4500);
 
   return (
     <section id="contact">

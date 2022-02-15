@@ -8,8 +8,11 @@ module.exports = {
       colors: {
         "theme-primary": "#616bf1"
       },
+      fontFamily: {
+        'Architects-Daughter': ['"Architects Daughter"', 'cursive']
+      },
       animation: {
-        fade: 'fadeOut 3s ease-in-out 2s',
+        fade: 'fadeOut 4s ease-in-out 1s',
       },
 
       keyframes: theme => ({

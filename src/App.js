@@ -5,6 +5,7 @@ import Listicle from './screens/Listicle';
 import MovieDb from './screens/MovieDb';
 import Portfolio from './screens/Portfolio';
 import { BsBootstrapFill } from 'react-icons/bs'
+import { AiFillApi } from 'react-icons/ai'
 import {
   SiReact,
   SiHtml5,
@@ -13,6 +14,7 @@ import {
   SiJavascript,
   SiExpress,
   SiPostgresql,
+  SiFramer,
 } from 'react-icons/si';
 
 function App() {
@@ -21,8 +23,8 @@ function App() {
     "id": 1,
     "name": "Movie DB",
     "language": "React, JavaScript, React Bootstrap",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "image": require("./assets/image1.jpg"),
+    "description": "MovieDB is a platform to know about your favourite movies. It fetches information from API. You can get the list of movies from popular, top rated and upcoming. From this project I learned about search functionality with the concept of debouncing, concept of useState and data context. The website is also compatible for mobile and tablet devices.",
+    "image": require("./assets/moviedb.png"),
     "current": "moviedb",
     "next": "listicle",
     "previous": null,
@@ -46,14 +48,18 @@ function App() {
     {
       "name": "JavaScript",
       Icon: SiJavascript
+    },
+    {
+      "name": "API",
+      Icon: AiFillApi
     }]
   },
   {
     "id": 2,
     "name": "Listicle",
     "language": "React, JavaScript, React Bootstrap",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "image": require("./assets/image2.jpg"),
+    "description": "Listicle Board is a web application where you can manage your list of items, create a group list and invite your friends to the group. I have used SMTP to send the group invitation to the user. The application uses JWT token for login/register functionality and is connected to the back-end. You can create, update and delete the list or group anytime you want.",
+    "image": require("./assets/listicle.png"),
     "current": "listicle",
     "next": "portfolio",
     "previous": "moviedb",
@@ -91,7 +97,7 @@ function App() {
     "id": 3,
     "name": "Portfolio",
     "language": "React, JavaScript, Tailwind",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "A website to demonstrate my skills and projects. Have used framer motion for animation. It has the live projects and their source code. The website is also compatible for mobile and tablet.",
     "image": require("./assets/image3.jpg"),
     "current": "portfolio",
     "next": null,
@@ -116,6 +122,10 @@ function App() {
     {
       "name": "JavaScript",
       Icon: SiJavascript
+    },
+    {
+      "name": "Framer Motion",
+      Icon: SiFramer
     }]
   }]
 

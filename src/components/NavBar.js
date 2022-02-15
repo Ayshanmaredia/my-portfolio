@@ -38,7 +38,7 @@ const NavBar = ({ showLinks = true }) => {
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/ayshan-maredia-669479129/" target="_blank" rel="noreferrer" className="block py-2 pr-4 pl-3 hover:text-theme-primary md:p-0">
+                            <a href="https://www.linkedin.com/in/ayshan-maredia" target="_blank" rel="noreferrer" className="block py-2 pr-4 pl-3 hover:text-theme-primary md:p-0">
                                 <SiLinkedin className="inline-block text-sm mr-0.5 mb-1" /> LinkedIn
                             </a>
                         </li>
