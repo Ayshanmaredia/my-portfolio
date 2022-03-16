@@ -18,20 +18,16 @@ const NavBar = ({ showLinks = true }) => {
                 </button>
                 <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
                     <ul className="inline-flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
-                        {showLinks &&
-                            <li>
-                                <a href="/" className="block py-2 pr-4 pl-3 hover:text-theme-primary md:p-0" aria-current="page">
-                                    Home
-                                </a>
-                            </li>
-                        }
-                        {showLinks &&
-                            <li>
-                                <a href="#contact" className="block py-2 pr-4 pl-3 hover:text-theme-primary md:p-0">
-                                    Contact
-                                </a>
-                            </li>
-                        }
+                        <li>
+                            <a href="/" className="block py-2 pr-4 pl-3 hover:text-theme-primary md:p-0">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" className="block py-2 pr-4 pl-3 hover:text-theme-primary md:p-0">
+                                Contact
+                            </a>
+                        </li>
                         <li>
                             <a href="https://github.com/Ayshanmaredia" target="_blank" rel="noreferrer" className="block py-2 pr-4 pl-3 hover:text-theme-primary md:p-0">
                                 <SiGithub className="inline-block text-sm mr-0.5 mb-1" />  GitHub

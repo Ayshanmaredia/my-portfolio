@@ -9,7 +9,8 @@ module.exports = {
         "theme-primary": "#616bf1"
       },
       fontFamily: {
-        'Architects-Daughter': ['"Architects Daughter"', 'cursive']
+        'Montserrat': ['"Montserrat"', 'sans-serif'],
+        'sans': ['"Roboto"', 'sans-serif']
       },
       animation: {
         fade: 'fadeOut 4s ease-in-out 1s',

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-const Project = ({ id, name, language, image, current }) => {
+const Project = ({ name, language, image, current }) => {
     return (
         <Link to={`${current}`}>
             <motion.div
@@ -14,8 +14,8 @@ const Project = ({ id, name, language, image, current }) => {
                         <img src={image} alt="project screenshot" />
                     </div>
                     <div className="px-6 py-4">
-                        <h3 className="font-bold text-xl mb-2">{name}</h3>
-                        <p className="text-gray-700 text-base">
+                        <h3 className="font-Montserrat font-semibold text-xl mb-2">{name}</h3>
+                        <p className="text-gray-600 text-">
                             {language}
                         </p>
                     </div>

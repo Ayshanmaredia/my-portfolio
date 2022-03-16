@@ -13,10 +13,9 @@ const Intro = () => {
                     animate={{ x: 0 }}
                     transition={{ type: "spring", stiffness: 50 }}
                     className="basis-1/2 mt-6 md:mt-0">
-                    <h1 className="text-4xl font-Architects-Daughter text-center leading-tight md:text-5xl md:text-left">Hi, I am Ayshan Maredia, a <span className="text-theme-primary font-semibold">Front-End-Developer</span></h1>
-                    <p className="mt-2">I am very passionate to work as Front-end Developer.
-                        I have completed my bachelors in Information Technology and latest graduated in Web design and development.
-                        I would like to join the corporation where I can showcase my skills and develop new skills.
+                    <h1 className="text-4xl font-Montserrat text-center leading-tight lg:text-5xl md:text-left">Hi, I am Ayshan Maredia, a <span className="text-theme-primary font-semibold">Front-End-Developer</span></h1>
+                    <p className="mt-2">I am a passionate Front-end Developer with bachelors in Information Technology and recently graduated in Web design and development.
+                    I like to build interactive UI layouts with my skills in development.
                     </p>
                     <div className="flex flex-row justify-center items-center md:justify-start">
                         <a href={Resume} download="Ayshan.pdf">

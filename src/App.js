@@ -11,6 +11,7 @@ import {
   SiHtml5,
   SiCss3,
   SiTailwindcss,
+  SiStyledcomponents,
   SiJavascript,
   SiExpress,
   SiPostgresql,
@@ -23,7 +24,7 @@ function App() {
     "id": 1,
     "name": "Movie DB",
     "language": "React, JavaScript, React Bootstrap",
-    "description": "MovieDB is a platform to know about your favourite movies. It fetches information from API. You can get the list of movies from popular, top rated and upcoming. From this project I learned about search functionality with the concept of debouncing, concept of useState and data context. The website is also compatible for mobile and tablet devices.",
+    "description": "MovieDB is a platform to know about your favourite movies. It fetches information from API. You can get the list of movies from popular, top rated and upcoming. From this project I learned about search functionality with the concept of debouncing, concept of useState and data context. The website is hosted on Netlify and also compatible for mobile and tablet devices.",
     "image": require("./assets/moviedb.png"),
     "current": "moviedb",
     "next": "listicle",
@@ -77,8 +78,8 @@ function App() {
       Icon: SiCss3
     },
     {
-      "name": "Bootstrap",
-      Icon: BsBootstrapFill
+      "name": "Styled-components",
+      Icon: SiStyledcomponents
     },
     {
       "name": "JavaScript",
@@ -98,7 +99,7 @@ function App() {
     "name": "Portfolio",
     "language": "React, JavaScript, Tailwind",
     "description": "A website to demonstrate my skills and projects. Have used framer motion for animation. It has the live projects and their source code. The website is also compatible for mobile and tablet.",
-    "image": require("./assets/image3.jpg"),
+    "image": require("./assets/portfolio.png"),
     "current": "portfolio",
     "next": null,
     "previous": "listicle",

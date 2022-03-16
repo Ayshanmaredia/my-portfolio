@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { SiGithub } from 'react-icons/si';
 import { HiLink, HiArrowRight, HiArrowLeft } from 'react-icons/hi';
 import Pill from './Pill';
 import NavBar from './NavBar';
+import Spin from './Spin';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -13,8 +14,6 @@ const ProjectDetails = ({ projects }) => {
   const [project, setProject] = useState();
 
   const pathName = useLocation().pathname;
-
-  const navigate = useNavigate();
 
   useEffect(() => {
     setProject(projects.find(element => element.current === pathName.replace("/", "")))
@@ -35,7 +34,7 @@ const ProjectDetails = ({ projects }) => {
             <div className="flex flex-col justify-center items-center pt-8 px-6 lg:px-32">
               <div className='flex justify-between w-full mb-3 lg:w-4/6'>
                 <div>
-                  <h3 className="text-2xl font-bold md:text-3xl">{project.name}</h3>
+                  <h3 className="text-2xl font-Montserrat font-bold md:text-3xl">{project.name}</h3>
                 </div>
                 <div className='flex flex-row'>
                   <button className="bg-theme-primary hover:opacity-80 text-white text-sm py-1.5 px-3 mr-2 rounded md:text-base">
@@ -51,13 +50,13 @@ const ProjectDetails = ({ projects }) => {
               <div className='h-auto w-full bg-gray-400 lg:w-4/6'>
                 <img src={project.image} alt="project screenshot" />
               </div>
-              <div className="w-full mt-3 lg:w-4/6">
+              <div className="font-Roboto w-full mt-3 lg:w-4/6">
                 <p>{project.description}</p>
               </div>
             </div>
             <div className="flex flex-col px-6 py-10 lg:px-80 lg:mx-4">
               <div>
-                <h4 className="text-lg font-medium mb-2">Tools and Technologies</h4>
+                <h4 className="text-lg font-Montserrat font-semibold mb-2">Tools and Technologies</h4>
               </div>
               <div>
                 {project.skills.map(({ name, Icon }, index) => (
@@ -91,8 +90,8 @@ const ProjectDetails = ({ projects }) => {
         </AnimatePresence>
       </>
       :
-      <div>
-        Loading...
+      <div className='flex h-screen w-full justify-center items-center'>
+        <Spin />
       </div>
   )
 };
