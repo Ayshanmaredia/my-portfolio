@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectDetails from '../components/ProjectDetails';
+import ProjectDetails from '../components/projectDetails/ProjectDetails';
 
 const Listicle = ({ projects }) => {
     return (

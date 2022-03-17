@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { SiGithub } from 'react-icons/si';
 import { HiLink, HiArrowRight, HiArrowLeft } from 'react-icons/hi';
-import Pill from './Pill';
-import NavBar from './NavBar';
-import Spin from './Spin';
+import Pill from '../Pill';
+import NavBar from '../NavBar';
+import Spin from '../Spin';
+import ProjectImages from './ProjectImages';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -22,7 +23,7 @@ const ProjectDetails = ({ projects }) => {
   return (
     project ?
       <>
-        <NavBar showLinks={false} />
+        <NavBar showLinks={false}/>
         <AnimatePresence exitBeforeEnter>
           <motion.section
             initial={{ translateX: "100%" }}
@@ -48,7 +49,9 @@ const ProjectDetails = ({ projects }) => {
                 </div>
               </div>
               <div className='h-auto w-full bg-gray-400 lg:w-4/6'>
-                <img src={project.image} alt="project screenshot" />
+                <ProjectImages 
+                  project={project}
+                />
               </div>
               <div className="font-Roboto w-full mt-3 lg:w-4/6">
                 <p>{project.description}</p>
