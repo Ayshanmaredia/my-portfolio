@@ -48,7 +48,7 @@ const ProjectDetails = ({ projects }) => {
                   </a>
                 </div>
               </div>
-              <div className='h-auto w-full bg-gray-400 lg:w-4/6'>
+              <div className='h-auto w-full bg-slate-200 lg:w-4/6'>
                 <ProjectImages 
                   project={project}
                 />
