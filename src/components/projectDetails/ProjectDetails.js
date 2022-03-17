@@ -70,7 +70,7 @@ const ProjectDetails = ({ projects }) => {
                   />
                 ))}
               </div>
-              <div className="mt-5">
+              <div className="mt-10">
                 {
                   project && project.next &&
                   <Link to={`/${project.next}`}>
