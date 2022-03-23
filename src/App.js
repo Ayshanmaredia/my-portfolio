@@ -29,6 +29,7 @@ function App() {
     "current": "moviedb",
     "next": "listicle",
     "previous": null,
+    "livelink": "https://movie-db-22.netlify.app",
     "sourceCodelink": "https://github.com/Ayshanmaredia/movieDB",
     "skills": [{
       "name": "React",
@@ -64,6 +65,7 @@ function App() {
     "current": "listicle",
     "next": "portfolio",
     "previous": "moviedb",
+    "livelink": "https://listicle-board.netlify.app",
     "sourceCodelink": "https://github.com/Ayshanmaredia/todo-client",
     "skills": [{
       "name": "React",
@@ -103,6 +105,7 @@ function App() {
     "current": "portfolio",
     "next": null,
     "previous": "listicle",
+    "livelink": "https://www.ayshanmaredia.com",
     "sourceCodelink": "https://github.com/Ayshanmaredia/my-portfolio",
     "skills": [{
       "name": "React",

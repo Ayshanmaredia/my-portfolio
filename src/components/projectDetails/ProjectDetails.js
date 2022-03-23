@@ -23,7 +23,7 @@ const ProjectDetails = ({ projects }) => {
   return (
     project ?
       <>
-        <NavBar showLinks={false}/>
+        <NavBar showLinks={false} />
         <AnimatePresence exitBeforeEnter>
           <motion.section
             initial={{ translateX: "100%" }}
@@ -38,9 +38,11 @@ const ProjectDetails = ({ projects }) => {
                   <h3 className="text-2xl font-Montserrat font-bold md:text-3xl">{project.name}</h3>
                 </div>
                 <div className='flex flex-row'>
-                  <button className="bg-theme-primary hover:opacity-80 text-white text-sm py-1.5 px-3 mr-2 rounded md:text-base">
-                    <HiLink className="inline-block text-sm mr-1 mb-1 lg:text-lg" />Live
-                  </button>
+                  <a href={project.livelink} target="_blank" rel="noreferrer">
+                    <button className="bg-theme-primary hover:opacity-80 text-white text-sm py-1.5 px-3 mr-2 rounded md:text-base">
+                      <HiLink className="inline-block text-sm mr-1 mb-1 lg:text-lg" />Live
+                    </button>
+                  </a>
                   <a href={project.sourceCodelink} target="_blank" rel="noreferrer">
                     <button className="bg-black hover:opacity-80 text-white text-sm py-1.5 px-3 rounded md:text-base">
                       <SiGithub className="inline-block text-sm mb-1 md:text-lg" /> Source Code
@@ -49,7 +51,7 @@ const ProjectDetails = ({ projects }) => {
                 </div>
               </div>
               <div className='h-auto w-full bg-slate-200 lg:w-4/6'>
-                <ProjectImages 
+                <ProjectImages
                   project={project}
                 />
               </div>

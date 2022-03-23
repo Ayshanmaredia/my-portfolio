@@ -18,7 +18,7 @@ const Intro = () => {
                     I like to build interactive UI layouts with my skills in development.
                     </p>
                     <div className="flex flex-row justify-center items-center md:justify-start">
-                        <a href={Resume} download="Ayshan.pdf">
+                        <a href={Resume} download="Ayshan_Resume.pdf">
                             <button className="bg-theme-primary text-white py-1.5 px-3 my-5 rounded inline-block">
                                 <MdDownload className="inline-block text-lg mr-0.5" /> Resume
                             </button>
