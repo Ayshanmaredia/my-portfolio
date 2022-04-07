@@ -6,6 +6,7 @@ import MovieDb from './screens/MovieDb';
 import Portfolio from './screens/Portfolio';
 import { BsBootstrapFill } from 'react-icons/bs'
 import { AiFillApi } from 'react-icons/ai'
+import { DiNodejs } from 'react-icons/di'
 import {
   SiReact,
   SiHtml5,
@@ -90,6 +91,10 @@ function App() {
     {
       "name": "Express",
       Icon: SiExpress
+    },
+    {
+      "name": "Node",
+      Icon: DiNodejs
     },
     {
       "name": "PostgreSQL",

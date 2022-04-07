@@ -1,6 +1,7 @@
 import React from 'react';
 import Pill from './Pill';
 import { BsBootstrapFill } from 'react-icons/bs'
+import { DiNodejs } from 'react-icons/di'
 import {
   SiReact,
   SiHtml5,
@@ -9,7 +10,7 @@ import {
   SiJavascript,
   SiJquery,
   SiExpress,
-  SiAngular,
+  SiNextdotjs,
   SiMysql,
   SiPostgresql,
   SiGithub,
@@ -25,10 +26,6 @@ const Skills = () => {
   const scale = useTransform(scrollYProgress, [0, 1.5], [0.2, 1.5]);
 
   const skills = [{
-    "name": "React",
-    Icon: SiReact
-  },
-  {
     "name": "HTML",
     Icon: SiHtml5
   },
@@ -49,16 +46,24 @@ const Skills = () => {
     Icon: SiJavascript
   },
   {
+    "name": "React",
+    Icon: SiReact
+  },
+  {
     "name": "JQuery",
     Icon: SiJquery
+  },
+  {
+    "name": "Next.js",
+    Icon: SiNextdotjs
   },
   {
     "name": "Express",
     Icon: SiExpress
   },
   {
-    "name": "Angular",
-    Icon: SiAngular
+    "name": "Node",
+    Icon: DiNodejs
   },
   {
     "name": "MySQL",
