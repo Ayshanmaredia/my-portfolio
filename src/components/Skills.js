@@ -16,7 +16,7 @@ import {
   SiGithub,
   SiMongodb,
   SiAdobephotoshop,
-  SiAdobexd
+  SiFigma
 } from 'react-icons/si';
 import { motion, useViewportScroll, useTransform } from 'framer-motion'
 
@@ -86,8 +86,8 @@ const Skills = () => {
     Icon: SiAdobephotoshop
   },
   {
-    "name": "Adobe XD",
-    Icon: SiAdobexd
+    "name": "Figma",
+    Icon: SiFigma
   }]
 
   return (
