@@ -1,9 +1,10 @@
 import React from 'react';
+import NavBar from '../components/NavBar';
 import Intro from '../components/Intro';
 import ProjectsList from '../components/projects/ProjectsList';
 import Skills from '../components/Skills';
 import Contact from '../components/Contact';
-import NavBar from '../components/NavBar';
+import MiniProjectLists from '../components/miniProjects/MiniProjectLists';
 
 const Home = ({ projects }) => {
 
@@ -15,6 +16,7 @@ const Home = ({ projects }) => {
                 <ProjectsList
                     projects={projects}
                 />
+                <MiniProjectLists />
                 <Skills />
                 <Contact />
             </div>

@@ -15,7 +15,7 @@ const Project = ({ name, language, image, current }) => {
                     </div>
                     <div className="px-6 py-4">
                         <h3 className="font-Montserrat font-semibold text-xl mb-2">{name}</h3>
-                        <p className="text-gray-600 text-">
+                        <p className="text-gray-600">
                             {language}
                         </p>
                     </div>
