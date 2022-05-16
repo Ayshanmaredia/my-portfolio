@@ -14,6 +14,18 @@ const MiniProjectLists = () => {
         "name": "Light-Dark Theme",
         "image": require("../../assets/dark.png"),
         "link": "https://codesandbox.io/s/dark-theme-zibi30",
+    },
+    {
+        "id": 3,
+        "name": "Drum kit",
+        "image": require("../../assets/drum_kit.png"),
+        "link": "https://codesandbox.io/s/drum-kit-yy90n6",
+    },
+    {
+        "id": 4,
+        "name": "Simon Game",
+        "image": require("../../assets/simon_game.png"),
+        "link": "https://codesandbox.io/s/simon-game-yo7n6i",
     }]
 
     return (
