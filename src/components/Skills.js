@@ -7,6 +7,7 @@ import {
   SiHtml5,
   SiCss3,
   SiTailwindcss,
+  SiStyledcomponents,
   SiJavascript,
   SiJquery,
   SiExpress,
@@ -42,28 +43,32 @@ const Skills = () => {
     Icon: SiTailwindcss
   },
   {
-    "name": "JavaScript",
-    Icon: SiJavascript
+    "name": "styled-components",
+    Icon: SiStyledcomponents
   },
   {
-    "name": "React",
-    Icon: SiReact
+    "name": "JavaScript",
+    Icon: SiJavascript
   },
   {
     "name": "JQuery",
     Icon: SiJquery
   },
   {
+    "name": "React",
+    Icon: SiReact
+  },
+  {
     "name": "Next.js",
     Icon: SiNextdotjs
   },
   {
-    "name": "Express",
-    Icon: SiExpress
-  },
-  {
     "name": "Node",
     Icon: DiNodejs
+  },
+  {
+    "name": "Express",
+    Icon: SiExpress
   },
   {
     "name": "MySQL",
@@ -74,12 +79,12 @@ const Skills = () => {
     Icon: SiPostgresql
   },
   {
-    "name": "GitHub",
-    Icon: SiGithub
-  },
-  {
     "name": "MongoDB",
     Icon: SiMongodb
+  },
+  {
+    "name": "GitHub",
+    Icon: SiGithub
   },
   {
     "name": "Photoshop",
